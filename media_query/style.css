@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(111, 150, 185);
+}
+h2 {
+  text-align: center;
+}
+h2,
+button,
+.cards {
+  margin-top: 1rem;
+  text-transform: capitalize;
+  color: white;
+}
+hr {
+  border: 2px solid rgb(87, 115, 140);
+  margin: 1rem 0;
+}
+.container {
+  display: flex;
+}
+.cards {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: rgb(100, 134, 164);
+
+  border-radius: 0.8rem;
+}
+button {
+  cursor: pointer;
+  padding: 1rem;
+  border: none;
+  background-color: rgb(87, 115, 140);
+  border-radius: 0.8rem;
+}
+/* for mobile screen  */
+@media (max-width: 580px) {
+  .container {
+    flex-direction: column;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* for tablet
+@media (max-width: 768px) {
+} */
