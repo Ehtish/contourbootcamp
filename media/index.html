@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>audio example</h2>
+    <audio controls>
+      <source src="files/horse.mp3" type="audio/mpeg" />
+    </audio>
+    <br />
+    <div class="container">
+      <h2>video example</h2>
+      <button onclick="playPause()">Play/Pause</button>
+      <button onclick="makesSmall()">Small</button>
+      <button onclick="makeMedium()">medium</button>
+      <button onclick="makeBig()">big</button>
+      <br /><br />
+      <video id="video1" width="420">
+        <source src="files/mov_bbb.mp4" />
+      </video>
+    </div>
+    <script>
+      var myvideo = document.getElementById("video1");
+      function playPause() {
+        if (myvideo.paused) myvideo.play();
+        else myvideo.pause();
+      }
+      function makesSmall() {
+        myvideo.width = 320;
+      }
+      function makeMedium() {
+        myvideo.width = 420;
+      }
+      function makeBig() {
+        myvideo.width = 520;
+      }
+    </script>
+  </body>
+</html>
