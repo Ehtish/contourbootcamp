@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js for react</title>
+  </head>
+  <body>
+    <!-- modules testing -->
+    <script type="module">
+      // modules
+      import { name, age } from "./person.js"; //name export
+      import message from "./message.js"; // default export
+
+      //name export
+      console.log(`name is ${name}`);
+      console.log(`age is ${age}`);
+
+      // default export
+      var out = message();
+      console.log(out);
+    </script>
+    <!-- modules testing -->
+  </body>
+</html>
